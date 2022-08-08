@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kreed</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="navbar">
+           <img src="Logo (4).png" alt="" class="logo">
+           <nav>
+               <ul id="menulist">
+                   <li><a href="#">Home</a></li>
+                   <li><a href="#">About Us</a></li>
+                   <li><a href="#">How it works</a></li>
+                   <li><a href="#">services</a></li>
+                   <li><a href="#"> Contact</a> </li>
+               </ul>
+           </nav>
+           <button class="navigation-button">Get Started</button>
+           <img src="menu.png" alt="" class="menu-icon" onclick="togglemenu()">
+        </div>
+        <div class="hero-container">
+        <div class="hero">
+            <h2>Connecting all your banking needs</h2>
+            <p>A smart mobile application you can control your business needs</p>
+            <br>
+            <img src="download app.png" alt="" class="app">
+        </div>
+        <div>
+            <img src="image.png" alt="" class="image">
+        </div>
+    </div>
+    </div>
+    <script>
+        var menulist = document.getElementById("menulist");
+
+        menulist.style.maxHeight = "0px";
+        function togglemenu(){
+            if(menulist.style.maxHeight == "0px")
+            {
+                menulist.style.maxHeight = "130px"
+            }
+            else
+            {
+                menulist.style.maxHeight = "0px"
+            }
+        }
+    </script>
+</body>
+</html>
+
